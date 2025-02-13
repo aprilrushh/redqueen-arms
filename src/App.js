@@ -33,6 +33,11 @@ const App = () => {
       description: "법률 상담 예약과 일정 관리"
     },
     {
+      title: "AI 쇼호스트 상품소개/상담주문접수",
+      icon: "🎙️",
+      description: "24시간 실시간 상품 소개와 주문 상담 서비스"
+    },
+    {
       title: "기타 서비스 예약 / 관리",
       icon: "✨",
       description: "모든 예약 서비스를 위한 맞춤형 솔루션"
@@ -42,11 +47,11 @@ const App = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section */}
-      <header className="bg-gradient-to-r from-red-600 to-red-800 text-white">
+      <header className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white">
         <div className="container mx-auto px-6 py-16">
           <div className="flex flex-col items-center text-center">
-            <div className="text-5xl mb-6">👑</div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">RedQueen ARMS</h1>
+            <div className="text-5xl mb-6">🐝</div>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">BusyBee ARMS</h1>
             <p className="text-xl md:text-2xl mb-6">AI Reservation Management System</p>
             <p className="text-lg mb-4 max-w-3xl">
               모든 서비스를 AI 여성 로봇이 사람보다 더 친절하고 완벽하게 예약, 상담을 대행해드립니다
@@ -55,9 +60,9 @@ const App = () => {
               "상담원이 정말 사람인지 구별할 수 없을 정도로 완벽합니다"
             </p>
             <p className="text-lg mb-8 max-w-2xl italic">
-              예약, 상담, 관리를 RedQueen 로봇에 맡겨주세요
+              예약, 상담, 관리를 BusyBee 로봇에 맡겨주세요
             </p>
-            <button className="bg-white text-red-600 px-8 py-3 rounded-lg font-semibold hover:bg-red-50 transition-colors">
+            <button className="bg-white text-yellow-600 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-50 transition-colors">
               무료로 시작하기
             </button>
           </div>
@@ -79,7 +84,7 @@ const App = () => {
       {/* Features Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">RedQueen의 특별한 점</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">BusyBee의 특별한 점</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             <FeatureCard
               icon="🤖"
@@ -110,7 +115,7 @@ const App = () => {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
-              <p className="font-bold text-lg">RedQueen ARMS</p>
+              <p className="font-bold text-lg">BusyBee ARMS</p>
               <p className="text-gray-400">© 2025 All rights reserved.</p>
             </div>
             <div className="flex items-center space-x-4">
@@ -130,7 +135,7 @@ const ServiceCard = ({ icon, title, description }) => (
     <h3 className="text-xl font-semibold mb-2">{title}</h3>
     <p className="text-gray-600">{description}</p>
     <div className="mt-4 flex justify-end">
-      <span className="text-red-600 hover:text-red-700">자세히 보기 →</span>
+      <span className="text-yellow-600 hover:text-yellow-700">자세히 보기 →</span>
     </div>
   </div>
 );
