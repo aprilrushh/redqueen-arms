@@ -47,24 +47,34 @@ const App = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section */}
-      <header className="bg-gradient-to-r from-red-600 to-red-800 text-white">
-        <div className="container mx-auto px-6 py-16">
-          <div className="flex flex-col items-center text-center">
-            <div className="text-5xl mb-6">🐝</div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Umpa Rumpa ARMS</h1>
-            <p className="text-xl md:text-2xl mb-6">AI Reservation Management System</p>
-            <p className="text-lg mb-4 max-w-3xl">
-              모든 서비스를 AI 여성 로봇이 사람보다 더 친절하고 완벽하게 예약, 상담을 대행해드립니다
-            </p>
-            <p className="text-lg mb-8 max-w-3xl font-medium">
-              "상담원이 정말 사람인지 구별할 수 없을 정도로 완벽합니다"
-            </p>
-            <p className="text-lg mb-8 max-w-2xl italic">
-              예약, 상담, 관리를 Umpa Rumpa 로봇에 맡겨주세요
-            </p>
-            <button className="bg-white text-red-600 px-8 py-3 rounded-lg font-semibold hover:bg-red-50 transition-colors">
-              무료로 시작하기
-            </button>
+      <header className="relative bg-gradient-to-r from-red-600 to-red-800 text-white overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=\"30\" height=\"30\" viewBox=\"0 0 30 30\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z\" fill=\"rgba(255,255,255,0.07)\"%3E%3C/path%3E%3C/svg%3E')] opacity-20"></div>
+        </div>
+        <div className="relative">
+          <div className="container mx-auto px-6 py-24">
+            <div className="flex flex-col items-center text-center">
+              <div className="w-24 h-24 bg-yellow-400 rounded-full flex items-center justify-center mb-8 shadow-lg transform hover:scale-110 transition-transform duration-300">
+                <div className="text-6xl">🐝</div>
+              </div>
+              <h1 className="font-poppins text-5xl md:text-7xl font-bold mb-6 tracking-tight">
+                BusyBee <span className="font-normal">ARMS</span>
+              </h1>
+              <div className="w-24 h-1 bg-yellow-400 mb-8"></div>
+              <p className="text-xl md:text-2xl mb-8 font-light">AI Reservation Management System</p>
+              <p className="text-lg mb-4 max-w-3xl font-light">
+                모든 서비스를 AI 여성 로봇이 사람보다 더 친절하고 완벽하게 예약, 상담을 대행해드립니다
+              </p>
+              <p className="text-lg mb-8 max-w-3xl font-medium bg-red-700/30 px-6 py-4 rounded-lg inline-block">
+                "상담원이 정말 사람인지 구별할 수 없을 정도로 완벽합니다"
+              </p>
+              <p className="text-lg mb-12 max-w-2xl font-light italic">
+                예약, 상담, 관리를 BusyBee 로봇에 맡겨주세요
+              </p>
+              <button className="bg-white text-red-600 px-12 py-4 rounded-lg font-semibold hover:bg-red-50 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                무료로 시작하기
+              </button>
+            </div>
           </div>
         </div>
       </header>
@@ -84,7 +94,7 @@ const App = () => {
       {/* Features Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">Umpa Rumpa의 특별한 점</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">BusyBee의 특별한 점</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             <FeatureCard
               icon="🤖"
@@ -115,7 +125,7 @@ const App = () => {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
-              <p className="font-bold text-lg">Umpa Rumpa ARMS</p>
+              <p className="font-bold text-lg">Umpa Rumpa</p>
               <p className="text-gray-400">© 2025 All rights reserved.</p>
             </div>
             <div className="flex items-center space-x-4">
